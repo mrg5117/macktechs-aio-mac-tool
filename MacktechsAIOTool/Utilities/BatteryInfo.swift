@@ -1,6 +1,6 @@
 //
 //  BatteryInfo.swift
-//  Macktechs AIO Tool
+//  Macktechs AIO Mac Tool
 //
 //  Battery cycles and health via IOKit power source APIs.
 //

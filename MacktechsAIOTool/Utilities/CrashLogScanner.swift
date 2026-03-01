@@ -1,6 +1,6 @@
 //
 //  CrashLogScanner.swift
-//  Macktechs AIO Tool
+//  Macktechs AIO Mac Tool
 //
 //  Read-only scan of DiagnosticReports and CrashReporter logs.
 //

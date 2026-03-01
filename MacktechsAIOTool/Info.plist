@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>Macktechs AIO Tool</string>
+	<string>Macktechs AIO Mac Tool</string>
 	<key>CFBundleName</key>
-	<string>Macktechs AIO Tool</string>
+	<string>Macktechs AIO Mac Tool</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.macktechs.aiotool</string>
+	<string>com.macktechs.aiomac.tool</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>CFBundleShortVersionString</key>

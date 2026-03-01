@@ -1,6 +1,6 @@
 //
 //  StartupScanner.swift
-//  Macktechs AIO Tool
+//  Macktechs AIO Mac Tool
 //
 //  Read-only scan of LaunchAgents, LaunchDaemons, Login Items.
 //

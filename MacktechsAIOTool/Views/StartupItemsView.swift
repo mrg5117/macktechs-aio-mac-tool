@@ -1,6 +1,6 @@
 //
 //  StartupItemsView.swift
-//  Macktechs AIO Tool
+//  Macktechs AIO Mac Tool
 //
 //  Read-only display of startup items (LaunchAgents, LaunchDaemons, Login Items).
 //

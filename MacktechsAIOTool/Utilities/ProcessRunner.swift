@@ -1,6 +1,6 @@
 //
 //  ProcessRunner.swift
-//  Macktechs AIO Tool
+//  Macktechs AIO Mac Tool
 //
 //  Runs browser_health_check.sh from the app bundle and returns combined stdout + stderr.
 //

@@ -1,6 +1,6 @@
 //
 //  OverviewView.swift
-//  Macktechs AIO Tool
+//  Macktechs AIO Mac Tool
 //
 //  Dashboard: Mac hardware info and battery (cycles, health %).
 //

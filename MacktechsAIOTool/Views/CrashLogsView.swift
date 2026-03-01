@@ -1,6 +1,6 @@
 //
 //  CrashLogsView.swift
-//  Macktechs AIO Tool
+//  Macktechs AIO Mac Tool
 //
 //  Read-only display of recent crash logs and summary.
 //

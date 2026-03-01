@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Macktechs AIO Tool
+//  Macktechs AIO Mac Tool
 //
 //  Single-window, Malwarebytes-style layout: sidebar + detail.
 //
@@ -35,7 +35,7 @@ struct ContentView: View {
 
                 Section("Diagnostics") {
                     NavigationLink(value: SidebarItem.browserHealth) {
-                        Label("Browser Health", systemImage: "globe")
+                        Label("Browser Health Check", systemImage: "globe")
                     }
                     NavigationLink(value: SidebarItem.systemHealth) {
                         Label("System Health", systemImage: "speedometer")

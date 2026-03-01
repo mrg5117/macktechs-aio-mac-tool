@@ -1,6 +1,6 @@
 //
 //  MacInfo.swift
-//  Macktechs AIO Tool
+//  Macktechs AIO Mac Tool
 //
 //  Hardware info: model, CPU, memory, disk. Uses sysctl, ProcessInfo, FileManager.
 //

@@ -1,6 +1,6 @@
 //
 //  DiagnosticReport.swift
-//  Macktechs AIO Tool
+//  Macktechs AIO Mac Tool
 //
 //  Aggregated read-only diagnostic data for JSON/HTML export.
 //

@@ -1,6 +1,6 @@
 //
 //  SecurityScanner.swift
-//  Macktechs AIO Tool
+//  Macktechs AIO Mac Tool
 //
 //  Read-only security scan: profiles, SIP, Gatekeeper, XProtect, MRT, hosts, etc.
 //

@@ -1,6 +1,6 @@
 //
 //  SecurityView.swift
-//  Macktechs AIO Tool
+//  Macktechs AIO Mac Tool
 //
 //  Placeholder for future security & malware scanning.
 //

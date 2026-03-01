@@ -1,6 +1,6 @@
 //
 //  ReportGenerator.swift
-//  Macktechs AIO Tool
+//  Macktechs AIO Mac Tool
 //
 //  Creates timestamped report folder, JSON and HTML reports (read-only).
 //
@@ -9,9 +9,9 @@ import Foundation
 
 enum ReportGenerator {
 
-    static let reportsDirectoryName = "Macktechs AIO Reports"
+    static let reportsDirectoryName = "Macktechs AIO Mac Tool Reports"
 
-    /// Creates ~/Documents/Macktechs AIO Reports/<timestamp>/ and returns its URL.
+    /// Creates ~/Documents/Macktechs AIO Mac Tool Reports/<timestamp>/ and returns its URL.
     static func createReportFolder() -> URL {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd_HH-mm-ss"
@@ -52,7 +52,7 @@ enum ReportGenerator {
         var sections: [String] = []
         sections.append("""
         <!DOCTYPE html>
-        <html><head><meta charset="utf-8"><title>Macktechs AIO Report</title>
+        <html><head><meta charset="utf-8"><title>Macktechs AIO Mac Tool Report</title>
         <style>
         body { font-family: -apple-system, sans-serif; margin: 24px; background: #f5f5f5; }
         h1 { color: #333; }
@@ -67,7 +67,7 @@ enum ReportGenerator {
         pre { overflow-x: auto; font-size: 12px; background: #f8f8f8; padding: 12px; border-radius: 4px; }
         details { margin: 8px 0; }
         </style></head><body>
-        <h1>Macktechs AIO Tool — Diagnostic Report</h1>
+        <h1>Macktechs AIO Mac Tool — Diagnostic Report</h1>
         <p>Generated: \(dateStr)</p>
         """)
 

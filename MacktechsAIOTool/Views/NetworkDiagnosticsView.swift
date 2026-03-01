@@ -1,6 +1,6 @@
 //
 //  NetworkDiagnosticsView.swift
-//  Macktechs AIO Tool
+//  Macktechs AIO Mac Tool
 //
 //  Read-only network info: interface, IP, DNS, proxy, Wi‑Fi, ping.
 //

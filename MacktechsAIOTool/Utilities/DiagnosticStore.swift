@@ -1,6 +1,6 @@
 //
 //  DiagnosticStore.swift
-//  Macktechs AIO Tool
+//  Macktechs AIO Mac Tool
 //
 //  Holds last report folder and runs full diagnostic (read-only).
 //
@@ -18,7 +18,7 @@ final class DiagnosticStore: ObservableObject {
     /// Path to show in UI after report is saved (e.g. for alert).
     @Published var reportSavedPath: String?
 
-    /// Runs all Phase One + Phase Two scanners, generates JSON + HTML in ~/Documents/Macktechs AIO Reports/<timestamp>/
+    /// Runs all Phase One + Phase Two scanners, generates JSON + HTML in ~/Documents/Macktechs AIO Mac Tool Reports/<timestamp>/
     func runFullDiagnostic() {
         guard !isRunningFullScan else { return }
         isRunningFullScan = true

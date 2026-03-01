@@ -1,6 +1,6 @@
 //
 //  BrowserHealthView.swift
-//  Macktechs AIO Tool
+//  Macktechs AIO Mac Tool
 //
 //  Runs bundled browser_health_check.sh and shows output in a scrollable log-style view.
 //
@@ -18,7 +18,7 @@ struct BrowserHealthView: View {
                     .font(.title2)
                     .fontWeight(.semibold)
                 Spacer()
-                Button(isRunning ? "Running…" : "Run Scan") {
+                Button(isRunning ? "Running…" : "Run Browser Health Scan") {
                     runScan()
                 }
                 .disabled(isRunning)
@@ -27,24 +27,23 @@ struct BrowserHealthView: View {
 
             Divider()
 
-            ScrollViewReader { proxy in
-                ScrollView([.vertical, .horizontal]) {
-                    Text(output.isEmpty ? "No scan run yet. Tap “Run Scan” to run the browser health check script." : output)
-                        .font(.system(.body, design: .monospaced))
-                        .frame(maxWidth: .infinity, alignment: .topLeading)
-                        .textSelection(.enabled)
-                        .padding()
-                }
+            ScrollView([.vertical, .horizontal]) {
+                Text(output.isEmpty ? "No scan run yet." : output)
+                    .font(.system(.body, design: .monospaced))
+                    .frame(maxWidth: .infinity, alignment: .topLeading)
+                    .textSelection(.enabled)
+                    .padding(.top, 4)
             }
         }
+        .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-        .navigationTitle("Browser Health")
+        .navigationTitle("Browser Health Check")
     }
 
     private func runScan() {
         isRunning = true
         output = ""
-        runBrowserHealthScript { result in
+        BrowserHealthRunner.run { result in
             output = result
             isRunning = false
         }

@@ -1,6 +1,6 @@
 //
-//  MacktechsAIOApp.swift
-//  Macktechs AIO Tool
+//  MacktechsAIOMacToolApp.swift
+//  Macktechs AIO Mac Tool
 //
 //  Main app entry point. Single-window SwiftUI macOS app.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct MacktechsAIOApp: App {
+struct MacktechsAIOMacToolApp: App {
     @StateObject private var diagnosticStore = DiagnosticStore()
 
     var body: some Scene {

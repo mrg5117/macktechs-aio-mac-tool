@@ -1,6 +1,6 @@
 //
 //  InstalledAppsView.swift
-//  Macktechs AIO Tool
+//  Macktechs AIO Mac Tool
 //
 //  Read-only list of installed applications.
 //
