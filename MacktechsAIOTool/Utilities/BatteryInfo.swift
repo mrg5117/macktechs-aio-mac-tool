@@ -8,7 +8,7 @@
 import Foundation
 import IOKit.ps
 
-struct BatteryInfo {
+struct BatteryInfo: Codable {
     let cycleCount: Int?
     let designCapacity: Int?
     let maxCapacity: Int?

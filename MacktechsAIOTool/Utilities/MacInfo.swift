@@ -8,7 +8,7 @@
 import Foundation
 import Darwin
 
-struct MacInfo {
+struct MacInfo: Codable {
     let modelIdentifier: String
     let marketingName: String?
     let cpu: String

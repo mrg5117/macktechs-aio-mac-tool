@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MacktechsAIOApp: App {
+    @StateObject private var diagnosticStore = DiagnosticStore()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(diagnosticStore)
                 .frame(minWidth: 800, minHeight: 500)
         }
         .windowTitleDisplayMode(.inline)

@@ -11,11 +11,16 @@ import Foundation
 func runBrowserHealthScript(completion: @escaping (String) -> Void) {
     let queue = DispatchQueue(label: "com.macktechs.browserhealth", qos: .userInitiated)
     queue.async {
-        let result = runScriptSync()
+        let result = runBrowserHealthScriptSync()
         DispatchQueue.main.async {
             completion(result)
         }
     }
+}
+
+/// Synchronous version for use when building full diagnostic report (call from background queue).
+func runBrowserHealthScriptSync() -> String {
+    runScriptSync()
 }
 
 private func runScriptSync() -> String {
@@ -49,6 +54,7 @@ private func runScriptSync() -> String {
     let combined = [out, err].joined(separator: "\n").trimmingCharacters(in: .whitespacesAndNewlines)
     return combined.isEmpty ? "(No output)" : combined
 }
+
 
 /// Fallback: look for script in bundle Resources directory by name.
 private func findScriptInBundle() -> URL? {
