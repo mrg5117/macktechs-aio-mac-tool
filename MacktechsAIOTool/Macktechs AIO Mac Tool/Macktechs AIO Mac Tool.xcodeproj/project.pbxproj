@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C9511ABE2F5517B600085CF2 /* browser_health_check.sh in Resources */ = {isa = PBXBuildFile; fileRef = C9511ABD2F5517B600085CF2 /* browser_health_check.sh */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C971C8952F550BF600FBA515 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9511ABD2F5517B600085CF2 /* browser_health_check.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = browser_health_check.sh; sourceTree = "<group>"; };
 		C971C8852F550BF400FBA515 /* Macktechs AIO Mac Tool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Macktechs AIO Mac Tool.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C971C8942F550BF600FBA515 /* Macktechs AIO Mac ToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Macktechs AIO Mac ToolTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C971C89E2F550BF600FBA515 /* Macktechs AIO Mac ToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Macktechs AIO Mac ToolUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +80,7 @@
 		C971C87C2F550BF400FBA515 = {
 			isa = PBXGroup;
 			children = (
+				C9511ABD2F5517B600085CF2 /* browser_health_check.sh */,
 				C971C8872F550BF400FBA515 /* Macktechs AIO Mac Tool */,
 				C971C8972F550BF600FBA515 /* Macktechs AIO Mac ToolTests */,
 				C971C8A12F550BF600FBA515 /* Macktechs AIO Mac ToolUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9511ABE2F5517B600085CF2 /* browser_health_check.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
