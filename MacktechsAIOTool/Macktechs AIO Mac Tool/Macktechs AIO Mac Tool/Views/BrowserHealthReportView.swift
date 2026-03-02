@@ -140,7 +140,7 @@ struct BrowserHealthReportView: View {
     }
 
     private var summarySection: some View {
-        Group {
+        VStack(alignment: .leading, spacing: 4) {
             Text("Generated: \(dateFormatter.string(from: report.generatedAt))")
                 .font(.subheadline)
             Text("macOS \(report.macOSVersion) · \(report.architecture)")
@@ -148,7 +148,7 @@ struct BrowserHealthReportView: View {
                 .foregroundStyle(.secondary)
             Text("Suspicious findings: \(report.suspiciousSummary.count)")
                 .font(.caption)
-                .foregroundStyle(report.suspiciousSummary.isEmpty ? .secondary : .orange)
+                .foregroundColor(report.suspiciousSummary.isEmpty ? Color.secondary : Color.orange)
         }
     }
 
